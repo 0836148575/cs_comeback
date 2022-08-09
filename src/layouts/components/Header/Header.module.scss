@@ -1,0 +1,656 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+//top header
+.top_header {
+    height: 50px;
+    background-color: #2f93a3;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1170px;
+}
+
+// group left header
+.group_left {
+    width: 62px;
+    margin: 17px 0;
+    color: var(--white);
+}
+
+.btn_left {
+    display: flex;
+    align-items: center;
+}
+
+.currency_img {
+    max-width: 18px;
+    margin-right: 6px;
+}
+
+.currency_code {
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.currency_icon {
+    font-size: 11px;
+}
+
+// group right header
+.group_right {
+    display: flex;
+    float: right;
+    color: var(--white);
+}
+
+.list_right {
+    position: relative;
+    line-height: 1.5;
+    padding: 5px 13px;
+}
+
+.list_item {
+    font-size: 12px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 36%;
+        right: 5%;
+        height: 14px;
+        width: 1px;
+        background-color: #fff;
+        opacity: 0.4;
+    }
+}
+
+// add logo header when scroll
+.group_center {
+    display: none;
+    text-align: center;
+    position: absolute;
+    left: 54%;
+    top: 13px;
+    width: 330px;
+    margin-left: -16.5%;
+    padding-left: 30px;
+    padding-right: 30px; transform: scale(1);
+    transition: 3s;
+}
+
+.group_center_logo {
+    display: inline-block;
+    margin: 0;
+   
+}
+.group_center_logo img {
+    width: 70%;
+}
+
+.db {
+    display: block;
+   
+}
+
+
+// tippy login
+.customer_login {
+    width: 220px;
+    position: absolute;
+    top: 0;
+    right: -14px;
+    font-size: 14px;
+    color: #5a5a5a;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+
+.body_box {
+    padding: 15px 20px;
+
+    > a {
+        color: #5a5a5a;
+    }
+}   
+
+.box_content {
+    margin-bottom: 15px;
+
+    > a {
+        color: #5a5a5a;
+    }
+}
+
+.box_input {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    border: 1px solid #ccc;
+}
+
+.btn_login {
+    width: 100%;
+    padding: 0 30px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #fff;
+    border: 1px solid #222222;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--white);
+        background-color: #222;
+        opacity: 0.7;
+    }
+}
+
+
+// main Header
+.main_header {
+    height:195px;
+    background-color: #f8f8f8;
+}
+
+.main_header_inner {
+    width: 100%;
+}
+
+.nav_top{
+    display: flex;
+    box-shadow: 0px 1px rgb(0 0 0 / 12%)
+}
+
+// nav search input
+.nav_search {
+    width: 390px
+}
+
+.search {
+    width: 270px;
+    height: 40px;
+    padding-right: 50px;
+    margin: 42px 0;
+    position: relative;
+    border: 1px solid #dbdbdb;
+}
+
+.input_search {
+    width: 100%;
+    border: 0;
+    font-size: 12px;
+    background-color: transparent;
+    line-height: 38px;
+    height: 38px;
+    padding-left: 10px;
+}
+
+.icon_search {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    margin-top: -10px;
+    margin-right: -10px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+
+// main header when window scroll 
+.main_affix {
+    height: 70px;
+    background-color: var(--white);
+}
+
+.nav_top_affix {
+    position: relative;
+    align-items: center;
+    box-shadow: none;
+}
+
+.search_affix {
+    width: 175px;
+    height: 40px;
+    padding-right: 50px;
+    margin: 15px 0;
+    position: relative;
+    border: 1px solid #dbdbdb;
+}
+
+.logo_affix {
+    display: none;
+}
+
+.nav_area_affix {
+    position: absolute;
+    top: 50px;
+    right: 188px;
+    width: 819px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_area_item_affix {
+    padding: 0 15px 26px !important;
+    margin: 0 15px;
+}
+
+.nav_cart_affix {
+    margin: 0 !important ;
+    flex: 1;
+}
+
+.templates_container_affix {
+    left: -245px !important;
+    width: 819px !important;
+}
+
+.mega_container_affix {
+    left: -391px !important;
+    width: 819px !important;
+    height: 370px !important;
+}
+
+.mega_box_item_affix {
+    padding: 30px !important;
+}
+
+.menu_mega_affix { 
+    display: block !important;
+    width: 316px !important;
+}
+
+.menu_mega_img_affix {
+    text-align: left !important;
+
+    & >img {
+        width: 128px !important;
+    }
+}
+
+// nav logo
+.nav_logo {
+    width: 390px;
+    height: 40px;
+    margin: 42px 0;
+    text-align: center;
+}
+
+// nav cart
+.nav_cart {
+    width: 390px;
+    height: 20px;
+    margin: 59px 0 42px 0;
+    text-align: center;
+}
+
+.cart_info_group {
+    display: flex;
+    float: right;
+}
+
+.cart_group {
+    display: flex;
+    align-items: center;
+}
+
+.cart_img {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+.cart_info {
+    font-size: 14px;
+    color: var(--black)
+}
+
+// tippy nav_cart
+.dropdown_menu {
+    width: 300px;
+}
+
+.dropdown_box {
+    padding: 20px;
+}
+
+.heading {
+    font-style: italic;
+}
+
+.cart_btn {
+    width: 100%;
+    height: 40px;
+    color: #222;
+    background-color: #fff;
+    padding: 0 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border: 1px solid #222222;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--white);
+        background-color: #2f93a3;
+    }
+}
+
+// nav area
+.navigation_area {
+    height: 70px;
+}
+
+.navigation_links {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.nav_item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5a5a5a;
+    letter-spacing: 1px;
+    padding: 0 25px 26px;
+
+    &.active {
+        color: #2f93a3;
+    }
+
+    &:hover {
+        color: #2f93a3;    
+    }
+}
+
+.nav_item_icon {
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+// tippy shop menu
+.menu_shop {
+    position: absolute;
+    top: -10px;
+    text-transform: uppercase;
+    list-style: none;
+    background-color: var(--white);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    transform-origin: top left;
+    animation: SlideDown 0.4s ease-in-out forwards;
+    z-index: 10;
+
+    @keyframes SlideDown {
+        0% {
+            transform: translateY(0)
+        }
+        80% {
+            transform: translateY(1.1)
+        }
+        100% {
+            transform: translateY(1)
+        }
+    }  
+}
+
+.menu_shop_item {
+    width: 170px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.menu_shop_link {
+    color: var(--black);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 11px 30px;
+
+    &:hover {
+        color: #2f93a3;    
+    }
+}
+
+.menu_link_icon {
+    margin-left: 12px;
+    font-size: 10px;
+}
+
+// menu shop children
+.menu_shop_children {
+    position: absolute;
+    top: -19px;
+    right: -21px;
+    width: 191px;
+    background-color: var(--white);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    transform-origin: left top;
+    animation: SlideDown 0.3s ease-in-out forwards;
+    z-index: 10;
+
+    @keyframes SlideDown {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(1);
+        }
+    } 
+}
+
+.menu_shop_children_item {
+    padding: 0 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);    
+}
+
+.menu_shop_children_link {
+    color: #2f93a3;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 131px;
+    font-size: 12px;
+    padding: 11px 0;
+}
+
+// tippy templates
+.Templates_menu {
+    position: relative;
+}
+
+.Templates_container {
+    position: absolute;
+    top: 53px;
+    left: -377px;
+    width: 1170px;
+    height: 305px;
+    background-image: url(https://cdn.shopify.com/s/files/1/1357/1399/t/4/assets/mega-bg-01.png?v=66642439566389632951467607069);
+    box-shadow: none;
+    z-index: 10;
+    transform-origin: top;
+    animation: SlideDown 0.4s ease-in-out;
+
+    @keyframes SlideDown {
+        0% {
+            transform: scaleY(0)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    } 
+}
+
+.box_item {
+    display: inline-flex;
+    width: 100%;
+    padding: 55px 45px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.mega_box_item {
+    display: inline-flex;
+    width: 100%;
+    padding: 55px 45px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.menu_item {
+    width: 25%;
+    margin-left: 30px;
+    text-align: left;
+    list-style: none;
+}
+
+.menu_title {
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 17px;
+    margin-bottom: 19px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 1px;
+        background-color: #fff;
+    }
+
+}
+
+.menu_info {
+    margin-bottom: 19px;
+
+    &:hover {
+        cursor: pointer;
+        color: #2f93a3;
+    }
+}
+
+// mega menu
+.Mega_container {
+    position: absolute;
+    top: 52px;
+    left: -522px;
+    width: 1170px;
+    height: 305px;
+    background-image: url(https://cdn.shopify.com/s/files/1/1357/1399/t/4/assets/mega-bg-01.png?v=66642439566389632951467607069);
+    box-shadow: none;
+    z-index: 10;
+    transform-origin: top;
+    animation: SlideDown 0.4s ease-in-out forwards;
+
+    @keyframes SlideDown {
+        0% {
+            transform: scaleY(0)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    } 
+}
+
+.menu_info_mega {
+    font-size: 12px;
+    margin-bottom: 19px;
+
+    &:hover {
+        cursor: pointer;
+        color: #2f93a3;
+    }
+}
+
+.menu_mega {
+    display: flex;
+}
+
+.mega_img {
+    padding: 0 15px;
+    width: 225px;
+
+    > img {
+        width: 100%;
+    }
+}
+
+.mega_info {
+    width: 190px;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.mega_info_heading {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 12px;
+}
+
+.mega_info_title {
+    font-size: 12px;
+    text-transform: none;
+    margin-bottom: 13px;
+    line-height: 1.8em;
+}
+
+.mega_info_btn {
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    &:hover {
+        cursor: pointer;
+        color: #2f93a3;
+    }
+}
+
+// float right icon
+.float_right_icon {
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: #2f93a3;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 12px;    
+    visibility: hidden;
+    transform: translateX(100px);
+    transition: .4s;
+}
+
+.active {
+    visibility: visible;
+    transform: translateX(0);
+    transition: .4s;
+}
+

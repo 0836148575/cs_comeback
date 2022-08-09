@@ -1,0 +1,111 @@
+.wrapper_footer {
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer_top {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+    transform: translateX(-193px);
+    transition: 2s ease;
+    animation: autoAnimation 3s ease-in-out infinite;
+
+    @keyframes autoAnimation{
+        0%{
+            transform: translateX(-193px);
+            transition: 0.4s;
+        }
+        100%{
+            transform: translateX(0);
+             transition: 0.4s;
+        }
+    }
+}
+
+.item_link{    
+    display: block;
+    width: 193px;
+    text-align: center;
+}
+
+.active {
+    transform: translateX(0);
+    transition: 0.4s;
+}
+
+// newsletter
+.footer_newsletter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    background-image: url(//cdn.shopify.com/s/files/1/1357/1399/t/4/assets/bg_newletter1.png?v=1687648…),url(//cdn.shopify.com/s/files/1/1357/1399/t/4/assets/bg_newletter2.jpg?v=5851081…);
+    background-position: 15px bottom,right bottom;
+    background-repeat: no-repeat,no-repeat;
+    background-color: transparent;
+    padding: 23px 170px 23px 190px;
+}
+
+.newsletter_title h5{
+    text-transform: uppercase;
+    color: #454545;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 46px;
+}
+
+.newsletter_form {
+    position: relative;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+    height: 46px;
+    width: 350px;
+    padding-right: 50px;
+}
+
+.newsletter_input {
+    font-size: 12px;
+    line-height: 44px;
+    height: 44px;
+    width: 100%;
+    padding: 6px 12px 6px 20px;
+    background-color: transparent;
+}
+
+.btn_newsletter_send {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    line-height: 44px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #2f93a3;
+}
+// copy right
+.footer_copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    color: #454545;
+}
+
+.cr_info {
+    font-size: 14px;
+}
+
+.footer_social {
+    text-align: right;
+    width: 50%;
+}
+
+.social_link{
+    color: #454545;
+    margin-left: 18px;
+
+    &:hover {
+        color: #2f93a3;
+    }
+}
+

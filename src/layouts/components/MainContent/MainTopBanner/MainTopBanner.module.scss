@@ -1,0 +1,43 @@
+
+// main top banner
+.main_top_banner {
+    padding: 0 20px 50px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.top_banner_item {
+    display: flex;
+    padding: 0 15px;
+    position: relative;
+}
+
+.item_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    padding: 15px 30px 0 20px;
+    color: var(--white);
+    text-align: right;
+}
+
+.item_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
+
+.item_content {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.item_price {
+    font-size: 20px;
+    color: #ffda92;
+}

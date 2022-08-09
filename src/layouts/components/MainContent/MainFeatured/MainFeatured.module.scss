@@ -1,0 +1,234 @@
+.main_featured_inner {
+    width: 100%;
+}
+
+.featured_title {
+    position: relative;
+    padding-bottom: 40px;
+    font-size: 18px;    
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+
+    &::after {
+        position: absolute;
+        width: 50px;
+        height: 12px;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        margin-left: -25px;
+        margin-bottom: 15px;
+        background-image: url(//cdn.shopify.com/s/files/1/1357/1399/t/4/assets/line_title.png?v=1614387…);
+    }
+}
+
+.featured_content {
+}
+
+.featured_content_wrapper {
+    margin: 0 15px 30px;
+}
+
+.content_nav {
+    border-top: 1px solid #dbdbdb;
+
+}
+
+.content_nav_item {
+    position: relative;
+    display: inline-block;
+    padding-top: 28px;
+    margin-right: 35px;
+    font-weight: 600;
+    line-height: 1em;
+    color: #9d9d9d;
+    opacity: 0.8;
+   
+    &:hover {
+        cursor: pointer;
+        color: #2f93a3;
+        background-color: transparent;
+        opacity: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            margin-top: -2px;
+            top: 0;
+            left: 0;
+            background-color: #2f93a3;
+            animation: bod 0.3s ease-in-out;
+
+            @keyframes bod {
+                0% {
+                    transform: scale(0);
+                }
+                100%{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+.active {
+    color: #2f93a3;
+    background-color: transparent;
+    opacity: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        margin-top: -2px;
+        top: 0;
+        left: 0;
+        background-color: #2f93a3;
+    }
+}
+
+// 
+.featured_product {
+    width: 100%;
+}
+
+.product_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    height: 391px;
+    margin: 0 16px;
+    border: 1px solid transparent;
+    overflow: hidden;
+
+    &:hover{
+        cursor: pointer;
+        border: 1px solid #2f93a3;
+        overflow: hidden;
+    }
+
+    &:hover .img_hover, &:hover .product_icons {
+        transition: 0.4s;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-258px);
+    }
+
+    &:hover .img_default, &:hover .product_info {
+        transition: 0.4s;
+        transform: scale(0.4);
+        opacity: 0;
+    }
+
+    &:hover .product_icons {
+        transform: translate(0, -72px);
+    }
+}
+
+.product_image {
+    width: 100%;
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.img_default, .img_hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_default {
+    transition: 0.7s;
+    transform: scale(1);
+}
+
+.img_hover {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: 0.4s;
+}
+
+.product_info {
+    text-align: center;
+    font-size: 14px;
+    transition: 0.7s;
+}
+
+.product_info h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.product_price {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.price_sale {
+    color: #2f93a3;
+}
+
+.price_compare {
+    margin-left: 8px;
+    color: #9d9d9d;
+    text-decoration: line-through;
+}
+
+.product_start {
+    font-size: 12px;
+}
+
+.stating {
+    color: #ffad10;
+}
+
+.product_icons {
+    margin-top: 12px;
+    text-align: center;
+    visibility: visible;
+    opacity: 0;
+    transition: 0.4s;
+    transform: translate(150px, -72px);
+}
+
+.bars_icon, .search_icon, .heart_icon {
+    margin: 0 6px;
+    padding: 11px 14px;
+    font-size: 14px;
+    color: #ccc;
+    border: 1px solid #ccc;
+
+    &:hover {
+        cursor: pointer;
+        border-color: #2f93a3;
+        color: #2f93a3;
+    }
+}
+
+.product_sale {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #fe0000;
+    transform: rotate(42deg);
+
+    p {
+        font-size: 13px;
+        font-weight: 700;
+        transform: rotate(318deg)
+    }
+}
+
