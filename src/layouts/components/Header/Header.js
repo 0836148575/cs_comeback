@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import styles from './Header.module.scss';
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'
 import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
@@ -233,7 +234,7 @@ function Header() {
 
                             <div ref={navArea} className={clsx(styles.navigation_area)}>
                                 <div className={clsx(styles.navigation_links)}>     
-                                    <a ref={navAreaItem} href="/" className={clsx(styles.nav_item, styles.active)}>HOME</a>
+                                    <Link ref={navAreaItem} to="/" className={clsx(styles.nav_item, styles.active)}>HOME</Link>
 
                                     {/* SHOP MENU */}
                                     <Tippy
@@ -287,10 +288,10 @@ function Header() {
                                             </PopperWrapper>
                                         )}
                                     >
-                                        <a href="/" className={clsx(styles.nav_item)}>
+                                        <Link to="/shop" className={clsx(styles.nav_item)}>
                                             SHOP
                                             <span className={clsx(styles.nav_item_icon)}><FontAwesomeIcon icon={solid('angle-down')} /></span> 
-                                        </a>
+                                        </Link>
                                     </Tippy>
 
                                     {/* templates menu */}
